@@ -1,0 +1,15 @@
+{
+  "source": "https://yandex.ru/maps/org/yesh_ka/189617602002/menu/",
+  "organizationId": "189617602002",
+  "capturedAt": "2026-08-16",
+  "captureMethod": "Manual browser DOM snapshot of the public Menu tab; no runtime API or scraping is used by the site.",
+  "sourceNotice": "The menu was labelled ‘Обновлено 28 мая. Источник: Представитель организации’. Product external IDs were not exposed in the public card DOM.",
+  "categories": ["Хот - дог", "Закуски", "РИМСКАЯ ПИЦЦА", "ШАУРМА", "Ролл", "Сендвич", "СЕНДВИЧ"],
+  "productCount": 35,
+  "productPhotoUrlsObserved": {
+    "Хот-дог Датский": "https://avatars.mds.yandex.net/get-sprav-products/1521147/2a0000019362f343715342e112d327c5c059/M_height",
+    "Хот-дог Дон бекон": "https://avatars.mds.yandex.net/get-sprav-products/2757887/2a0000019362f56cea13b2fba0c68d823eeb/M_height",
+    "Хот-дог французский": "https://avatars.mds.yandex.net/get-sprav-products/3912342/2a0000019362f726452d36d1f1ac20634604/M_height"
+  },
+  "normalizedOutput": "../../data/menu.ts"
+}
