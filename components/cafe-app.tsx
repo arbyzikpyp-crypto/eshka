@@ -1,8 +1,10 @@
 "use client";
-import Image from "next/image"; import Link from "next/link"; import { useEffect, useMemo, useState } from "react";
+import NextImage, { type ImageProps } from "next/image"; import Link from "next/link"; import { useEffect, useMemo, useState } from "react";
 import { business } from "../data/business"; import { categories, products, type Product } from "../data/menu";
 import { reviews, reviewsSummary } from "../data/reviews";
+import { publicPath } from "../lib/public-path";
 type Cart = Record<string,number>;
+function Image({src,...props}:ImageProps){return <NextImage {...props} src={typeof src==="string"?publicPath(src):src}/>}
 const money=(n:number)=>new Intl.NumberFormat("ru-RU").format(n)+" ₽";
 const fallback="/images/demo-food-fallback.svg";
 function HeroVisual(){return <div className="hero-visual" aria-label="Блюда из меню Ешь!ка"><div className="hero-photo hero-photo-main"><Image src="/images/menu/hotdog-danish.jpg" fill priority sizes="(max-width:760px) 68vw, 28vw" alt="Хот-дог Датский"/></div><div className="hero-photo hero-photo-shawarma"><Image src="/images/menu/shawarma-classic.jpg" fill sizes="(max-width:760px) 38vw, 16vw" alt="Шаурма классическая"/></div><div className="hero-photo hero-photo-roll"><Image src="/images/menu/caesar-roll.jpg" fill sizes="(max-width:760px) 35vw, 15vw" alt="Цезарь ролл"/></div><div className="hero-photo hero-photo-snack"><Image src="/images/menu/nuggets.jpg" fill sizes="(max-width:760px) 27vw, 11vw" alt="Наггетсы"/></div></div>}
